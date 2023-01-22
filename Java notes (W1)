@@ -1,0 +1,20 @@
+--Structure--
+Public class NameCamel
+{
+	public static void main(String [] args)
+	{
+		//Write code in here//
+	}
+}
+
+--Declaring variables--
+int x;
+char name = 'a';\
+double pi = 3.14159265359;
+boolean answer = True
+
+--Getting user input--
+import java.util.Scanner;
+Scanner keyboard = new Scanner(System.in);
+System.out.print("Enter an integer value: ");  
+number = keyboard.nextInt(); //nextInt can be nextString, or nextDouble etc.//
