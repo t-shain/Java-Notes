@@ -9,9 +9,48 @@ Public class NameCamel
 
 --Declaring variables--
 int x;
-char name = 'a';\
+char name = 'a';
 double pi = 3.14159265359;
-boolean answer = True
+boolean answer = True;
+Final double = .4; //used for numbers that cannot be changed later in the program//
+Strong s = "hello";
+
+--Strings--
+getting a character in a string
+	charactar = StringName.CharAt(0); // 0 is the index
+Other methods
+	.Uppercase
+	.Lowercase
+Strings cannot themselves be changed, when a method is applied it makes a new string.
+
+--Converting values--
+use (double) or (int) to convert values
+EX: 
+	double)(x + y)/ 2.0
+	
+--Math in Java--
+Int by Int division truncates the value to an int and does not give you the true value, must change int to doubles to get true value.
+When any math is done on a double it converts the ending value to a double. // 3 + 4.0 = 7.0
+When a double is converted to a int it does not round up it just cuts off anything past the decimal. 
+When we do math with a character ('a') it converts to ASCII values. 
+	a = 65	A = 97
+	b= 66	B = 98
+
+--Formulas in math examples-- 
+::: area = pi(r)^2 :::
+	double area;
+	area = Math.PI * Math.pow(r,2); // Math is automatically imported to Java //
+::: c = sqr(a^2 + b^2) :::
+	double c;
+	c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2)); // calling methods take more time so you could sub Math.pow() 
+							to (a * a) to make this more efficient //
+--Java conventions--
+variables are in undercase, methods are in Uppercase. // nameOfperson = "Todd", public static void FileReport (String [] args) //
+dont have to many characters on one line, similar to python convention.  
+use camal case to name thing // HelloWorld //
+
+--Printf--
+System.out.printf("Number is %.2f,
 
 --Getting user input--
 import java.util.Scanner;
