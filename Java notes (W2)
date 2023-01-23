@@ -1,1 +1,29 @@
---if loops--
+
+
+-- Primitive comparisons and String comparisons --
+use >, <, >=, <=, !=. == to compare primative data types // int, char, double //
+these do not work for Strings must use the methods
+	.equals()
+	.equalsIgnoreCase()
+These methods output a value. is s1 is less then s2 you get a negative, if s1 if greater then s2 you get a positve, if they are the same you get 0.
+rember it as ( String1 - String2 )
+
+and -> &&
+or -> ||
+not -> !
+
+--if statments--
+
+if (boolean condition){
+	//Statments//
+	//Statments//
+}
+else if (boolean condition) {
+	//Statments//
+	//Statments//
+}
+else {
+	//Statments//
+	//Statments//
+}
+
