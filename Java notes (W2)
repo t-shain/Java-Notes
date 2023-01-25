@@ -18,12 +18,28 @@ if (boolean condition){
 	//Statments//
 	//Statments//
 }
+else if (boolean condition) { // This block will only except the first true statement, so if the first (else if) is true it will ignore the second one. //
+	//Statments//
+	//Statments//
+
+}
 else if (boolean condition) {
 	//Statments//
 	//Statments//
-}
 else {
 	//Statments//
 	//Statments//
 }
 
+d = a > b ? c * 2 : c * 3; // this says if a is greater than b do (c * 2) else do (c *3) //
+
+--Format String--
+printf("Their name is %s\nThe value is %.2f\n", name, value) // (%) is a place holder that goes to the variables at the end in order. \n is new line, 
+								and .2f rounds to two deciamal places, s is for a string 
+								variable, and d could be used for a double value //
+
+Sometimes multiple if statments that logically will always be true may not by compiled, so you have to make a non conditional else in order to fix it.
+
+--Creepers--
+x++; // same thing as x = x + 1
+	can be pre or post, when ++x it does that math then moves on to other statments, when ++x it does other statments then that last. 
