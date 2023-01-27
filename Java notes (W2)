@@ -1,6 +1,6 @@
 
 
--- Primitive comparisons and String comparisons --
+-- Primitive comparisons and String comparisons -----------------------------------------------------------------------------------------------------------
 use >, <, >=, <=, !=. == to compare primative data types // int, char, double //
 these do not work for Strings must use the methods
 	.equals()
@@ -11,9 +11,10 @@ rember it as ( String1 - String2 )
 and -> &&
 or -> ||
 not -> !
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
 
---if statments--
 
+--if statments---------------------------------------------------------------------------------------------------------------------------------------------
 if (boolean condition){
 	//Statments//
 	//Statments//
@@ -21,25 +22,97 @@ if (boolean condition){
 else if (boolean condition) { // This block will only except the first true statement, so if the first (else if) is true it will ignore the second one. //
 	//Statments//
 	//Statments//
-
 }
-else if (boolean condition) {
-	//Statments//
-	//Statments//
 else {
 	//Statments//
 	//Statments//
 }
-
 d = a > b ? c * 2 : c * 3; // this says if a is greater than b do (c * 2) else do (c *3) //
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
 
---Format String--
+
+
+--Format String--------------------------------------------------------------------------------------------------------------------------------------------
 printf("Their name is %s\nThe value is %.2f\n", name, value) // (%) is a place holder that goes to the variables at the end in order. \n is new line, 
 								and .2f rounds to two deciamal places, s is for a string 
 								variable, and d could be used for a double value //
-
 Sometimes multiple if statments that logically will always be true may not by compiled, so you have to make a non conditional else in order to fix it.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
 
---Creepers--
-x++; // same thing as x = x + 1
-	can be pre or post, when ++x it does that math then moves on to other statments, when ++x it does other statments then that last. 
+
+
+--Switch Statements----------------------------------------------------------------------------------------------------------------------------------------
+switch(variable or method // must evaluate to single value //) {
+	case 5: System.out.print("Five"):
+	case 7: System.out.print("Seven");
+		break; // changes to an if statement if it is seven then it will break and wont print the next line
+	case 11: System.out.print("eleven"); // if switch variable is five it will print five seven eleven,  if eleven it will only print eleven
+	defult : System.out.print("none");	
+}
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+--Creepers or Increments----------------------------------------------------------------------------------------------------------------------------------
+x++; // same thing as x = x + 1 // increments by one, can also be (x--) or (--x) //
+	can be pre or post 
+	when (++x) it does that math then moves on to other statments, 
+	when (x++) it does other statments then that last. 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+--Loops---------------------------------------------------------------------------------------------------------------------------------------------------
+
+[pre-test]
+	tests condition first then does the body only if its true
+[post-test]
+	does the body then test the condition
+	
+	-while loop-
+int x =1;
+while( //boolean condition// ){ // everytime the while loop does a loop it is called a single iteration //
+	//Statements//;
+	//Statements//; 
+}
+	-for loop-
+for(initialization, test, modify) {
+	//Statements//;
+}
+a for loop with two semi colons is an intentional infinite loop 
+for(;;){
+}
+you can put mutiple variables and initionalizations each seperated by a comma. The test must eval to one value however. 
+
+|EX|
+int x = 1;
+while(x < 5) {
+	System.out.print(x);
+	x++;
+}
+
+
+for(int i = 1; i < 5; i++) {
+	System.out.print(i);
+}
+
+	-do while loop-
+do
+{
+
+} while(//boolean condition//);
+// needs semicolon for while statment. this will run at least once then test condition //
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+--Random Number Generator----------------------------------------------------------------------------------------------------------------------------------
+import jave.util.Random
+Random r = new Random(); // if you put a number in parenthesis it adds a seed which gives a predictable random number that easy easier to debug. 
+
+r.nextInt(high - low + 1) + low
+
+|EX|
+int n =r.nextInt(5) // gives random number between 0 and 4, inclusive on zero exclusive on five //
+r.nextint(10) + 1 // gives random number between 1 and 10 //
+
