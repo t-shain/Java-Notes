@@ -1,2 +1,33 @@
 
---Writing in files using PrintWriter--
+--Looking at files-----------------------------------------------------------------------------------------------------------------------------------------
+Import java.io.*; 
+Import java.util.Scanner;
+Use a scanner to get a file, and use the File object as well. 
+
+File F = new File("//name of file//");
+Scanner s = new Scanner(F);
+int i = s.nextInt(); // can also use nextDouble();, nextLine(); //
+s.close();
+
+	==EX==
+	Scanner  s = new Scanner(new File("testFile.txt"));
+	String line = s.nextLine();
+	System.out.print(line);
+	s.close();
+
+you can also combine Scanner and file into one line. 
+Scanner s = new Scanner(new File("//file name//");
+Use the hasNext() method to read a whole file until there is a blank line at the end. this method is usally in while loops. 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+---Writing into files--------------------------------------------------------------------------------------------------------------------------------------
+PrintWriter pw = new PrintWriter("newFile.txt")
+pw.printLine("this is a new line in the file");
+pw.close(); //once this is called you cannot write in it again unless you define it again. //
+
+	--Appending files--
+	This can append values at the end of a file, otherwise if you only used Printwriter it would erase everything first then write the new statment.
+	FileWriter fw = new FileWriter("newFile.txt", true);
+	PrintWriter pw = new Printwriter(fw);
+	
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
