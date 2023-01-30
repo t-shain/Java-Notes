@@ -9,3 +9,6 @@ Data types, user input using scanners, and print statment.
 
 --WEEK TWO--
 If, else, for, while, and do loops. Boolean keywords &&, ||, ==. !=. using ++, +=. -=. --, to add varibles to themselves. 
+
+--WEEK THREE--
+File reading, and void and return methods. 
