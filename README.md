@@ -8,7 +8,7 @@ Most of the notes will be organized by week. Below is a summary of each weeks le
 Data types, user input using scanners, and print statment.
 
 --WEEK TWO--
-If, else, for, while, and do loops. Boolean keywords &&, ||, ==. !=. using ++, +=. -=. --, to add varibles to themselves. 
+If, else, for, while, and do loops. Boolean keywords &&, ||, ==. !=. using ++, +=. -=. --, to add varibles to themselves. Random Values
 
 --WEEK THREE--
 File reading, and void and return methods. 
