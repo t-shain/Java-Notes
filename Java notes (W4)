@@ -4,9 +4,20 @@
 
 -UML Diagrams----------------------------------------------------------------------------------------------------------------------------------------------
 + is public method, - is private method only to be used insde of class. 
+First block is the variables that need to be initialized, second block are the methods.
+Methods that return values have the : return value at the end. 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 -Constructor-----------------------------------------------------------------------------------------------------------------------------------------------
-Is method named after class name, when object is defined in another class it takes items put into the parenthesis. 
+-Is method matches class name, when object is defined in another class it takes items put into the parenthesis. Creates the object in some state.
+Classes can have multiple constructors. 
+- Is only created as 
+--public ConstrucName(params){
+	}
 
+- using this. refers to the obect variables so when you shadow variables there is no confusion. 
+-if no constructor is provided java "creates" one and sets all values to there most zero value. (0 for numbers, false for boolean)
+	-Once you write a single constructor you no longer get the null constructor 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
