@@ -5,9 +5,24 @@ public class Fraction {
   	private int numerator;
   	private int denominator;
 	
+	// CONSTRUCTORS // 
+	public Fraction(int n, int d) {
+		numerator = n;
+		denominator = d;
+		reduce();
+	}
 	
-	public void setNumerator(int num) { // note, there is no static //   // this method sets a value passed into it to the numerator variable 
-	  																   // that has a scope within the whole class //
+	// exception for no parameters during object definition //
+	public Fraction() {
+		numerator = 0;
+		denominator = 1; // when there are two methods with the same name it is known as OVERLOADING, will only cause an error if they have same 				    parameters // 
+	}
+	public Fraction(int numerator) { // Shadowing is when two variables have the same name. The compiler is confusing the class instance variable to 					   this constructor variable //
+		this.numerator = n; // to get around shadowing the this. method refuse explicitly to the class instance variable so there is no confusion.
+		denominator = 1;
+	}
+	//SETTERS//
+	public void setNumerator(int num) { // note, there is no static //   // this method sets a value passed into it to the numerator variable // that 										has a scope within the whole class //
 		numerator = num; 
 		Reduce(numerator);
 	}
@@ -19,7 +34,7 @@ public class Fraction {
 			denominator = 1;		
 	}
 	
-	
+	//GETTERS//
 	public int getNumerator() { // getters that return values from inside the class to outside
 		return numerator;
 	}
@@ -50,4 +65,13 @@ public class Fraction {
 	}
 	
 }
-
+// in class method for other class
+public static Fraction FractionTester(Fraction f1, Fraction f2) {
+	int num1 = f1.getNumerator();
+	int denom1 = f1.getDenominator();
+	
+	int num2 = f2.getNumerator();
+	int denom2 = f2.getDenominator();
+	
+	int SUMnum = (num1 * num2) + (num2 * num1) 
+}
