@@ -25,5 +25,17 @@ Classes can have multiple constructors.
 -Setters set variables within the class.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
------------------------------------------------------------------------------------------------------------------------------------------------------------
+-Static methods and Static variables-----------------------------------------------------------------------------------------------------------------------
+-Static keyword is general is used to make something in refrence to just the class and does not need an instance to be used. 
+
+-When a class contains a static method, it isn’t necessary for an instance of the class to be created in order to execute the method.
+--public static int getNumCircles() {
+      return numCircles();
+   } // Method is accesed by simple doing Circle.getNumCircles() no instance is needed. 
+-Static methods cannot use variables from within the class becasue they are at a different level.
+   
+   
+-Static values or variables dont need instances to reach them, it just belongs to the class. (Circle.DEFUALT RADIUS)
+--private static final int DEFAULT_RADIUS = 10;
+
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
