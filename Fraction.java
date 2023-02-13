@@ -65,13 +65,34 @@ public class Fraction {
 	}
 	
 }
-// in class method for other class
-public static Fraction FractionTester(Fraction f1, Fraction f2) {
-	int num1 = f1.getNumerator();
-	int denom1 = f1.getDenominator();
+
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// in class methods for other class
+public class FractionTester {
+	public static void main(String [] args) {
 	
-	int num2 = f2.getNumerator();
-	int denom2 = f2.getDenominator();
+		public static Fraction FractionTester(Fraction f1, Fraction f2) {
+		int num1 = f1.getNumerator();
+		int denom1 = f1.getDenominator();
 	
-	int SUMnum = (num1 * num2) + (num2 * num1) 
+		int num2 = f2.getNumerator();
+		int denom2 = f2.getDenominator();
+	
+		int SUMnum = (num1 * num2) + (num2 * num1);
+		int SUMdenom = (denom1 * denom2);
+		return SUMnum/ SUMdenom;
+			
+		}
+
+		public static void doubler(Fraction f) { 
+		int doubleNum = f.getNumerator();
+		f.setNumerator(doubleNum * 2);
+		}
+	}
 }
+
+
