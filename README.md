@@ -12,3 +12,9 @@ If, else, for, while, and do loops. Boolean keywords &&, ||, ==. !=. using ++, +
 
 --WEEK THREE--
 File reading, and void and return methods. 
+
+--WEEK FOUR--
+Introduction to classes 
+
+--WEEK FIVE--
+More classes, using toString, static keyword, aggregation,
