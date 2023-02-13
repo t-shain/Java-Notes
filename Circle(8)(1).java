@@ -5,9 +5,9 @@ public class Circle
    //DEFAULT_MOVE, set to 20
    //DEFAULT_LOC, set to 100
    // ** we will be modifying these  in chapter 8 **
-   private final int DEFAULT_RADIUS = 10;
-   private final int DEFAULT_MOVE = 20;
-   private final int DEFAULT_LOC = 100;
+   private static final int DEFAULT_RADIUS = 10;
+   private static final int DEFAULT_MOVE = 20;
+   private static final int DEFAULT_LOC = 100;
       
    // declare instance variables for radius, x and y (all integers)
    private int radius;
@@ -75,5 +75,8 @@ public class Circle
    {  
       return radius;
    }   
+   public static int getNumCircles() {
+      return numCircles();
+   }
 
 }
