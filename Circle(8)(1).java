@@ -80,5 +80,10 @@ public class Circle
    public static int getNumCircles() {
       return numCircles();
    }
-
+   
+   public String toString() {
+      String s = String.format("x : %d, y : %d, radius : %d", getX(), getY(), getRadius());
+      return s;                  
+   }
+      
 }
