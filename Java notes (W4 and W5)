@@ -39,3 +39,16 @@ Classes can have multiple constructors.
 --private static final int DEFAULT_RADIUS = 10;
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-toString--------------------------------------------------------------------------------------------------------------------------------------------------
+-a method that is automatically called when a object needs to be turned into a string. 
+- if no method is made it returns an @xxxxxxxxxx (hecidecimal code)
+
+
+-the toString method gives yoyu a representation of each instance. 
+--public String toString() {
+      String s = String.format("x : %d, y : %d, radius : %d", getX(), getY(), getRadius());
+      return s;                  
+   }
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
