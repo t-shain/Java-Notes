@@ -75,6 +75,8 @@ public class Circle
    {  
       return radius;
    }   
+   
+   // get numCircles
    public static int getNumCircles() {
       return numCircles();
    }
