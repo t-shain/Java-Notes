@@ -1,4 +1,8 @@
 -CLASSES--------------------------------------------------------------------------------------------------------------------------------------------------
+Bascially our a group of methods that are blueprints for building up a thing (aka object).
+Classes create objects that have specfic methods, and variables that are within the scope of the class, and not the rest of your program. 
+
+The center of OBJECT ORIENTED PROGRAMING
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -18,6 +22,10 @@ Classes can have multiple constructors.
 - using this. refers to the obect variables so when you shadow variables there is no confusion. 
 -if no constructor is provided java "creates" one and sets all values to there most zero value. (0 for numbers, false for boolean)
 	-Once you write a single constructor you no longer get the null constructor 
+	
+-to call a constructor within a constructer aka write a constructor in terms of another.  
+	-the "this" keyword allows you to do this. 
+	-instead of the name of the constructor just use the keyword "this"
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 -Getters and Setters---------------------------------------------------------------------------------------------------------------------------------------
@@ -40,15 +48,38 @@ Classes can have multiple constructors.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
--toString--------------------------------------------------------------------------------------------------------------------------------------------------
+-toString, equals, and inheritence-------------------------------------------------------------------------------------------------------------------------
+-Every class has a "Object" as a superclass
+-Every class has built in methods that can still be changed using overrides and new methods. 
+
+-to write a true override write @Override before your method. 
+
 -a method that is automatically called when a object needs to be turned into a string. 
 - if no method is made it returns an @xxxxxxxxxx (hecidecimal code)
 
 
 -the toString method gives yoyu a representation of each instance. 
+@Override
 --public String toString() {
-      String s = String.format("x : %d, y : %d, radius : %d", getX(), getY(), getRadius());
+      String s = String.format("x : %d, y : %d, radius : %d", getX(), getY(), getRadius()); //safer to use methods (getters) instead of the
+      															actual variables//
       return s;                  
-   }
+  }  
+
+-the equals method is similar to toString it is inherited by every class but to specifically get it to work for your function you need to make your own. 
+-Every class object can see the data of all the other class objects. 
+
+@Override
+public boolean equals(Object other) {
+	Circle cOther = (Circle)other; //allows the constructor to look for a circle within a object address
+	if(this.x == cOther.x && this.y == cOther.y && this.radius == cOther.radius) //"this." is not needed but I like it so there! //
+		return true;
+	return false;
+	
+}
+
+
+
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
