@@ -4,7 +4,12 @@ public class CircleTester
    {
       Circle c1 = new Circle(); 
       Circle c2 = new Circle(5,15);
-      Circle c3 = new Circle(2,3,5);
+      Circle c3 = new Circle(5,15;
+      
+      if (c2.equals(c3)) 
+         System.out.println("Equal");
+      else
+         Sustem.out.println("Not Equal");
       
       displayCircle(c1);
       c1.move();
