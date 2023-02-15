@@ -8,6 +8,8 @@ public class Circle
    private static final int DEFAULT_RADIUS = 10;
    private static final int DEFAULT_MOVE = 20;
    private static final int DEFAULT_LOC = 100;
+   private static final int DEFAULT_X = 0;
+   private static final int DEFAULT_Y = 0;
       
    // declare instance variables for radius, x and y (all integers)
    private int radius;
@@ -18,9 +20,7 @@ public class Circle
    // sets x and y to DEFAULT_LOC;
    public Circle()
    {
-      radius = DEFAULT_RADIUS;
-      x = DEFAULT_LOC;
-      y = DEFAULT_LOC;
+      this(DEFAULT_X, DEFAULT_Y, DEFAULT_RADIUS);
   
    }
    // create an alternate constructor that takes in
@@ -80,10 +80,18 @@ public class Circle
    public static int getNumCircles() {
       return numCircles();
    }
-   
+   @Override
    public String toString() {
       String s = String.format("x : %d, y : %d, radius : %d", getX(), getY(), getRadius());
       return s;                  
+   }
+   
+   @Override
+   public boolean equals(Object other) {
+      Circle cOther = (Circle)other; //allows the constructor to look for a circle within a object address
+      if(this.x == cOther.x && this.y == cOther.y && this.radius == cOther.radius) //"this." is not needed but I like it so there! //
+         return true;
+      return false;
    }
       
 }
