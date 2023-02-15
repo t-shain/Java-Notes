@@ -64,7 +64,19 @@ public class Fraction {
 		denominator /= gcd;
 	}
 	
+	@Override
+	public String toString() {
+		String s = String.format("%d\n------\n%d", getNumerator(), getDenominator());
+		return s;
+	}
+	public boolean equals(Object other){
+		Fraction fOther = (Fraction)other;
+		if (this.numerator() ==  fOther.numerator() && this.denominator() == fOther.denominator())
+			return true;
+		return false;
+	}
 }
+
 
 
 
