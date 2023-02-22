@@ -18,3 +18,6 @@ Introduction to classes
 
 --WEEK FIVE--
 More classes, using toString, static keyword, aggregation,
+
+--WEEK SIX--
+Continuation of classes with more focus on aggregation and the toString and equals method.
