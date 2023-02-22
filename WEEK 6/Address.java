@@ -73,5 +73,9 @@ public class Address
    {
       zip = z;
    }
+   public String toString() {
+   
+   
+   }
   
 }
