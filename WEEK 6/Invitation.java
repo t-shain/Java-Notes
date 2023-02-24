@@ -32,5 +32,21 @@ public class Invitation {
 	public void setAttending(boolean b){
 		attending = b;
 	}
+	@Override
+	public String toString() {
+		String s = String.format("%s\n %s\n %s\n %s\n", invitee, event, date, location);
+		if(attending)
+			s += "attending";
+		else
+			s += "not attending";
+		return s;
+	}
+	@Override
+	public boolean equals(Object other) {
+		Invitation iOther = (Invitation)other;
+		if(this.date.equals(iOther.date) && this.location.equals(iOther.location))
+			return true;
+		return false;
+	}
   
 }
