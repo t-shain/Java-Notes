@@ -10,8 +10,18 @@ public class Address
    */
    public Address(String street, String city, String state, String zip)
    {
+      this.street = street;
+      this.city = city;
+      this.state = state;
+      this.zip = zip;
    
-   
+   }
+   // Copy constructor
+   public Address(Address Other) {
+      street = other.street;
+      city = other.city;
+      state = other.state;
+      zip = other.zip;
    }
    /** 
        @return street address
