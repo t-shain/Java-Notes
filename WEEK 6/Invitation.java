@@ -24,6 +24,15 @@ public class Invitation {
 		this.toInvitee = toInvitee;
 		this.attending = true;
 	}
+// Copy constructor for invitation
+	public Invitation(Invitation other) {
+		invitee = other.invitee;
+		event = other.event;
+		date = other.date;
+		location = new Address(other.location);
+		toInvitee = new Address(other.toInvitee);
+		attending = other.attending;
+	}
 	
 	public void positiveResponse() {
 		setAttending(true);
