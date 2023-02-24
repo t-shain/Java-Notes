@@ -6,7 +6,7 @@ public class Invitation {
 	private Address toInvitee;
 	private boolean attending;
   
-  // Blueprint constructor 
+  // Blueprint constructor .
 	public Invitation(String invitee, String event, String date, Address location, Address toInvitee, boolean attending) {
 		this.invitee = invitee;
 		this.event = event;
