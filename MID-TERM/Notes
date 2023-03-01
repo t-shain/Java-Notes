@@ -2,6 +2,7 @@
 TO-DO
 ======
 /+/ Practice deep and shallow copys
+/+/ Remeber that .equals within a .equals method is for non primative data types. 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 More notes
 
@@ -16,4 +17,7 @@ More notes
 |      */                    |
 |----------------------------|
 
-(*)
+(*) Shadowing 
+public void setNumber(int num) <-------// Shadowing occurs here// {
+  // its overcome using the "this." which references the class variable not this method param. //
+}
