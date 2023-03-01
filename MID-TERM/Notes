@@ -6,3 +6,14 @@ TO-DO
 More notes
 
 (*) ==, and .equals when not implemented in class just check if objects reference the same value. When .equals() is implemented it should check the actaully values of each object. 
+
+(*) java docs
+
+|----------------------------|
+|      /** Description       |
+|      * @param              |
+|      * @return             |
+|      */                    |
+|----------------------------|
+
+(*)
