@@ -2,14 +2,29 @@
 Arrays
 /+/ Similar to lists, to define an array 
 /+/ Arrays are not objects
-/+/ 
+
+A simple example of an array:
 int[] array1 = new int[3]; //new int [3] says that this array is size 3.
 array1[0] = 10;
 array1[1] = 20;
 array1[2] = 30;
 // these three statments set the three slots in the array to 10, 20, and 30. 
+
+/+/ you can also initilize a list quickly by doing:
+int[] array1 = {10, 20, 30};
+
+
 /+/ Methods for arrays include:
 .length //do not use() 
 
+/+/ if arrays are not full make sure to keep track of how many of the values you are using. 
+/+/ partially full arrays defulat to zero if you are asking for a value within the bounds of the array that has not yet been defined.
+
+++++++++++++++++++
+SPECIAL FOR LOOP
+++++++++++++++++++
+
+for(int i: array1) //This loops through values in the array. it is not as flexible but is quicker to type. 
+  System.out.print(i);
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
