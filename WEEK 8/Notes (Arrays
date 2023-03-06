@@ -18,7 +18,7 @@ int[] array1 = {10, 20, 30};
 .length //do not use() 
 
 /+/ if arrays are not full make sure to keep track of how many of the values you are using. 
-/+/ partially full arrays defulat to zero if you are asking for a value within the bounds of the array that has not yet been defined.
+/+/ partially full arrays defulat to null if you are asking for a value within the bounds of the array that has not yet been defined.
 
 ++++++++++++++++++
 SPECIAL FOR LOOP
