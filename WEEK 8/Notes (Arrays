@@ -1,0 +1,15 @@
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Arrays
+/+/ Similar to lists, to define an array 
+/+/ Arrays are not objects
+/+/ 
+int[] array1 = new int[3]; //new int [3] says that this array is size 3.
+array1[0] = 10;
+array1[1] = 20;
+array1[2] = 30;
+// these three statments set the three slots in the array to 10, 20, and 30. 
+/+/ Methods for arrays include:
+.length //do not use() 
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
