@@ -9,6 +9,7 @@ public class CardTester  {
 		hand[1] = new Card(Card.JACK, Card.SPADES);
 		hand[2] = new Card(5, Card.CLUBS);
 		hand[3] = new Card(
-	}
+		
+	}		
 }
   
