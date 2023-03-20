@@ -1,0 +1,18 @@
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+[Binary search] (DATA MUST BE SORTED)
+if you know a group of numbers is sorted in order you can use BINARY search for finding a number.
+you go to the middle of the group, if the value is higher cut out the lower half and then go to the middle of that. Continue to have until your value is there.
+
+[4, 7, 15, 22, 35, 52, 65, 70]
+
+first = array[0]
+last = array[7]
+middle = (7+0)/2 //which is three, becasue of truncation//
+
+
+if middle is < value then we throw away the lower values. by doing first's index is (middle + 1).
+if middle is > value then we throw away the higher values. by doing last's index is (middle -1).
+
+start with while loop (!found and first <= last)
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
