@@ -15,4 +15,8 @@ if middle is > value then we throw away the higher values. by doing last's index
 
 start with while loop (!found and first <= last)
 
+f 0 4 4 
+m 3 5 4  found
+l 7 7 6 
+
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
