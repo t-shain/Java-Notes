@@ -39,4 +39,5 @@ etc
 have a start scan that is at index 0, goes through finds smallest then swaps
 then start scan goes to index 1 goes through and finds the smallests and swaps
 
+for objects, you need to implement a compare to and equals.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
