@@ -20,3 +20,23 @@ m 3 5 4  found
 l 7 7 6 
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+[Selection Sort] 
+goes through all memebers of group and finds smallest value, then swaps it to the smallest index. then ignores that index 
+and finds the next smallest member. 
+
+Start with unsorted group, and do a number of passes. 
+[26, 55, 94, 18, 78, 30, 46, 56, 25]
+
+Pass 1: go to first element and find an element that is smaller and swap it. 
+[|18|, 55, 94, 26, 78, 30, 46, 56, 25] 
+Pass 2: go to index after first element and then go through list and find element that is smaller.
+[18, |25|, 94, 26, 78, 30, 46, 56, |55|] 
+
+etc
+
+have a start scan that is at index 0, goes through finds smallest then swaps
+then start scan goes to index 1 goes through and finds the smallests and swaps
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
