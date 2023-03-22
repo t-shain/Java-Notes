@@ -44,7 +44,7 @@ for objects, you need to implement a compare to and equals.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 [INHERITENCE] When an object is a subclass of another object. The subclasses can excess the superclasses constructors, and its public variables and
-methods. Every class that is created is a subclass of the [Object] class. Is refered to as a "is-a" relationship. 
+methods. Every class that is created is a subclass of the [Object] class. Is refered to as a "is-a" relationship. Any method calls in the super class can be used by the subclass. 
 
 
 |+| creating a subclass goes as follows:
@@ -63,6 +63,7 @@ public class SubClass extends SuperClass{
 |+| Subclasses when complied go to the superclasses constructor first. and compile the superclasses code before the subclasses. Superclasses will always be
 called be subclasses.
 
+|+| You can override superclasss methods (makes sure to use @Override notation so you can catch errors) So when objects with the subclass type will use a different method even though it has the same name. 
 
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
