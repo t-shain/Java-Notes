@@ -41,3 +41,28 @@ then start scan goes to index 1 goes through and finds the smallests and swaps
 
 for objects, you need to implement a compare to and equals.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+[INHERITENCE] When an object is a subclass of another object. The subclasses can excess the superclasses constructors, and its public variables and
+methods. Every class that is created is a subclass of the [Object] class. Is refered to as a "is-a" relationship. 
+
+
+|+| creating a subclass goes as follows:
+
+public class SubClass extends SuperClass{
+	public Boolean t;
+	
+	
+	public SubClass(String s, Double d, Boolean t){ //Constructor for SubClass //
+		super(s, d); //This calls the superclasses constructor that uses two parameters, doing super.super.super.etc goes up the change of superclasses//
+					 // if a super isnt called in a subclass it will automatically call the superclasses deafult constructor or no param constructor//
+		this.t = t;
+	}
+}
+
+|+| Subclasses when complied go to the superclasses constructor first. and compile the superclasses code before the subclasses. Superclasses will always be
+called be subclasses.
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
