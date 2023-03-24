@@ -73,3 +73,12 @@ called be subclasses.
 |+| getters and setters in subclasses are only for things in the subclass. 
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+[Polymorphism] When on object is cast to another object it will compile as that, but when a method is called it will go to the type of object and use those
+methods not the methods of the object it is cast to. 
+
+Employee man = new Employee();
+Object o = man;
+Syestem.out.println(o.toString()); // This will use the Employee toString() not the Object toString() //
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
