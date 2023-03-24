@@ -41,6 +41,8 @@ then start scan goes to index 1 goes through and finds the smallests and swaps
 
 for objects, you need to implement a compare to and equals.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+ 
+* add if(other == null) return false; in equals method it a different object is used. 
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 [INHERITENCE] When an object is a subclass of another object. The subclasses can excess the superclasses constructors, and its public variables and
@@ -65,5 +67,8 @@ called be subclasses.
 
 |+| You can override superclasss methods (makes sure to use @Override notation so you can catch errors) So when objects with the subclass type will use a different method even though it has the same name. 
 
+|+| If a subclass doesnt have a constructor and the superclass does not either then it will casue an error.
+
+|+| getters and setters in subclasses are only for things in the subclass. 
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
