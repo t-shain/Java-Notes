@@ -58,7 +58,7 @@ public class SubClass extends SuperClass{
 	public SubClass(String s, Double d, Boolean t){ //Constructor for SubClass //
 		super(s, d); //This calls the superclasses constructor that uses two parameters, doing super.super.super.etc goes up the change of superclasses//
 					 // you can not call the super() constructor later in the subclass it has to be FIRST //
-					 // if a super isnt called in a subclass it will automatically call the superclasses deafult constructor or no param constructor//
+					 // if a super isnt called in a subclass it will automatically call the superclasses deafult constructor or no 							param constructor//
 		this.t = t;
 	}
 }
