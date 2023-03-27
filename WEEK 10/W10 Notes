@@ -7,4 +7,7 @@ Only the Shape values in this variable are able to be used the |s| variable.
 s.getColor(); // works
 s.getBool(); // works
 s.getRadius(); // DOES NOT beacuse getRadius is only part of the Circle class and not in the Shape class. 
+
+if a subclass has overwritten a superclass method then it will use the subclasses method over the superclasses as long as the object is a subclass (even
+works when the sub class object is assigned to a superclass variable)
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
