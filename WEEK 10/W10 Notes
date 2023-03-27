@@ -1,5 +1,10 @@
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 [Polymorphism continued]
 
-HourlyEmployee he = new Employee(); // This creates a HourlyEmployee Variable but it only contains an Employee object. //
+Shape s = new Circle("green", false, 12.4);
+Only the Shape values in this variable are able to be used the |s| variable. 
+
+s.getColor(); // works
+s.getBool(); // works
+s.getRadius(); // DOES NOT beacuse getRadius is only part of the Circle class and not in the Shape class. 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
