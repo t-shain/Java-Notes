@@ -33,6 +33,7 @@ s.getRadius(); // will NOT work becasue getRadius is only in Circle class and no
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 [Interfaces] A collection of abstract methods. NO OTHER methods can be made within an interface. 
 |+| like signing a contract. You have to provide the behavior within the interface. 
+|+| you can add multiple interfaces by using commas. 
 
 public interface Driveable {
     public abstract void forward();
