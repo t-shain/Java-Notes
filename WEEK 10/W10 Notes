@@ -11,3 +11,10 @@ s.getRadius(); // DOES NOT beacuse getRadius is only part of the Circle class an
 if a subclass has overwritten a superclass method then it will use the subclasses method over the superclasses as long as the object is a subclass (even
 works when the sub class object is assigned to a superclass variable)
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+[Abstract Methods and Classes] A method with no body, is only a placeholder. Must be rewritten by another class. 
+
+public abstract double getAtrea();
+
+An class with an abstract method needs to have its sub classes override this. 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
