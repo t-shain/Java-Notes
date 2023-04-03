@@ -21,4 +21,12 @@ try{
 
 |+| make your try blocks as small as possible. 
 |+| using System.exit(1); exits they system and basically clears the work your code has done. 
+|+| You can have exceptions that Exented a clas. 
+|+| you can create new exception classes and use the throw keyword instead of return. 
+|+| Exceptions have a .getMessage() that will return a string that describes what the exception is.
+
+|+| Just adding a throws clause by your method title will just tell the machine to be prepared for a excpetion but it does not know how to handle it. You 
+want to use throws for unchecked exceptions like we did with files. Not for runtime, aka checked exceptions. 
+
+
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
