@@ -1,0 +1,24 @@
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+[Exceptions] Handeling erros and exceptions within the code of a program. 
+
+|+| Unchecked exceptions do not need to be handled with a try block but must be fixed by logically changing your code. 
+These are called errors in the object tree
+
+|+| Checked exceptions can be handled with try blocks. There are seperated branches of the object class for exceptions. 
+|+| Exceptions are objects that can be called and used in the try catch block
+
+
+try{
+
+// stuff to try that may return exception // also called a try suite //
+
+} catch(ExceptionName e) {
+
+// stuff to do if exception is thrown
+
+}
+
+
+|+| make your try blocks as small as possible. 
+|+| using System.exit(1); exits they system and basically clears the work your code has done. 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
