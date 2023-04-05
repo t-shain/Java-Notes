@@ -51,5 +51,18 @@ public static int factorial(int n) {
 
 }
 
+|+|this is set up like a stack
+
+|                |
+|Factorial n = 0 |
+|Factorial n = 1 |
+|Factorial n = 2 |
+|Factorial n = 3 |
+|Factorial n = 4 |
+|Factorial n = 5 |
+|Main method call|
+|________________|
+
+|+| the action pushes the previous method call then puts the next one on top, and so one. 
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
