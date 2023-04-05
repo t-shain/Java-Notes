@@ -30,3 +30,26 @@ want to use throws for unchecked exceptions like we did with files. Not for runt
 
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+[Recursion] when a method calls itself. Similar to a while loop. 
+
+|+| recursive functions need a sentenial of some kind to know when to stop calling itself. 
+
+|+| every recursive function has a base case and a recursive case. 
+example with calculating factorials. 
+
+|+| base case is what stops the recursion from being infinite.
+
+public static int factorial(int n) {
+  //base case
+  if (n==0) // this stops the recursion. 
+    return 1; 
+  
+  //recursive case
+  return n * factorial(n-1)
+
+}
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
