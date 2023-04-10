@@ -2,6 +2,19 @@
 [Abstract data types] 
 Stacks, queues, and Abstract lists, are data types that can be done in different coding langueges.
 
-Lists, you need to be able to add something, get something, remove something, display a value from it. 
+|+| Lists you need to be able to add something, get something, remove something, display a value from it. 
+
+
+|+| A node is a self referential data structure. 
+
+One node looks like this
+_______________           ________________             ________________
+|Data//Next(2)| <-------- |Data// Next(3)| <---------- |Data// Next(4)|
+|___n1________|           |____n2________|             |____n3________|
+
+first node referenced knows where the second node is, second one knows where the third node is etc...
+the first node in this case is known as the head. (in this example it would be 3. 
+
+Node<Unteger> head n1 = new Node<>(5);
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
