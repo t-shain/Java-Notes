@@ -17,15 +17,30 @@ _______________           ________________             ________________
 first node referenced knows where the second node is, second one knows where the third node is etc...
 the first node in this case is known as the head. (in this example it would be 3. 
 
+
 Node<Integer> n1 = new Node<>(5);
 Node<Integer> n2 = new Node<>(4, n1); // refers to n1 //
 Node<Integer> n3 = new Node<>(8, n2); // this is the "head" it is the first piece in the node list // 
 Node<Integer> head = n3
 
-curr = n3;
-while(curr != null) {
- System.out.println(curr.getItem);
-  curr = curr.getNext();
-}
+|+|n1.getItem() // returns number in node 
+|+|n1.getNext() // returns the next node object
 
+
+[example]
+
+n = [2,next-4] --> [4, next-8] --> [8, next-9] --> [9, next-10] --> [10, null] //this is node n
+
+previous = null;
+curr = n;
+int i = 0;
+while(curr.getNext() != null && i < 2) {
+ prev = curr;
+ curr = curr.getNext();
+ i++;
+
+}
+prev.setNext(new Node<integer>(3,curr));
+ 
+// this code creates a new node between 4 and 8 //
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
