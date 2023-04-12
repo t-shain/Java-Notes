@@ -3,8 +3,10 @@
 Stacks, queues, and Abstract lists, are data types that can be done in different coding langueges.
 
 |+| Lists you need to be able to add something, get something, remove something, display a value from it. 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
 
-
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+[NODE CLASS]
 |+| A node is a self referential data structure. 
 
 One node looks like this
@@ -15,6 +17,15 @@ _______________           ________________             ________________
 first node referenced knows where the second node is, second one knows where the third node is etc...
 the first node in this case is known as the head. (in this example it would be 3. 
 
-Node<Unteger> head n1 = new Node<>(5);
------------------------------------------------------------------------------------------------------------------------------------------------------------
+Node<Integer> n1 = new Node<>(5);
+Node<Integer> n2 = new Node<>(4, n1); // refers to n1 //
+Node<Integer> n3 = new Node<>(8, n2); // this is the "head" it is the first piece in the node list // 
+Node<Integer> head = n3
+
+curr = n3;
+while(curr != null) {
+ System.out.println(curr.getItem);
+  curr = curr.getNext();
+}
+
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
