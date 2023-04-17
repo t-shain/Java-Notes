@@ -1,0 +1,58 @@
+|+|Exception handeling
+|+|IOExceptions (for files)
+|+|NumberFormatat
+|+|Input Mismatch
+
+|+|Things that extend RuntimeException are unchecked. You ahve to handle these with good programming. 
+|+|Things that extend IOException make the compiler observe these when running code. 
+
+EXAMPLE OF EXCEPTION HANDELING
+-------------------------------------------------
+try{
+  Scanner in = new Scanner(//File stuff//);
+}
+catch (IOException e) {
+  sout("Dumbo that file aint real")
+  system.exit();
+}
+while(in.hasNext()) {
+  line = in.nextline();
+  try{
+    total += Integer.parseInt(line);
+  }
+  catch(NumberFormatException e) {
+    sout(line + " cantains bad data.");
+  }
+}
+-------------------------------------------------
+
+|+|review "has a" realtionship
+
+ClassAplha ca = new ClassBeta(); //When a class Alpha method is called and ClassBeta extends that class it will
+                                    override and use the ClassBeta version of the ClassAlpha method it will only 
+                                    do this if the method is also a part of ClassAlpha. 
+                                    This object cannot use only ClassBeta methods//
+ 
+ 
+[NODES]
+|+| You cannot assigne a subclass type to a different subclass object
+  SubClass1 o = new SubClass2(); //INVALID
+|+| When drawing nodes there needs to be a variable that references the first node, then for each there needs to be an item and an arrow with a 
+    reference to the next node
+
+
+[SEARCHING ALGO's]
+|+| Selection sort finds lowest value sets that equal to first index, then sorts the rest and finds lowest and sets that equal to the next index. 
+
+|+| binary search needs to be sorted before its started. It goes to the middle of the list if the value its looking for is large it cuts off the lower half
+    then finds the next middle and if that middle is lower/bigger then the value it cuts off the respected half. IT DOES NOT INCLUDE THE MIDDLE VALUE 
+    WHEN IT MAKES A NEW LIST!!! (it also does middle -1, or middle +1) if first index is > then last then value is not in list. 
+
+[RECURSIVE METHODS]
+public static int rec(int x, int y) { //This is the power function if rec(3,4) it will return 3^4.//
+if(y==1)
+  return x;
+else
+  return x * rec(x, y - 1);
+}
+
